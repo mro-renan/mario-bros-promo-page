@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/css/reset.css" />
+
+    <link rel="stylesheet" href="src/css/styles.css" />
+
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./src/imagens/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>The Super Mario Bros. Movie</title>
+  </head>
+
+  <body>
+    <div class="backgroundVideo">
+      <video class="video" autoplay loop muted>
+        <source src="./src/video/video-mario.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <header class="headerNav">
+      <a>
+        <img
+          class="logo unselectedElement"
+          src="./src/imagens/logo-chapeu-mario.png"
+          alt="logo chapéu Mario"
+        />
+      </a>
+      <nav>
+        <ul class="buttonsNav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Details</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="infoMovie">
+        <img
+          class="titleImage unselectedElement"
+          src="src/imagens/titulo.png"
+          alt="imagem chapéu Mario"
+        />
+        <p class="description">
+          Mario is a plumber together with his brother Luigi. One day, they end up
+          in the Mushroom Kingdom, ruled by Princess Peach, but threatened by the
+          by the king of the Koopas, who does everything he can to reign everywhere.
+          everywhere.
+        </p>
+        <button class="buttonTrailer">Watch the Trailer</button>
+      </div>
+      <img class="mario unselectedElement" src="./src/imagens/super-mario-chars.png" />
+
+      <div class="modal">
+        <div class="contentModal">
+          <span class="closeModal">×</span>
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/TnGl01FkMMo?si=RLef5pTnRiIbpHp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="src/js/index.js"></script>
+</html>

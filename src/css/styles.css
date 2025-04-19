@@ -1,0 +1,146 @@
+body {
+  font-family: "Poppins";
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.headerNav .logo {
+  width: 65px;
+}
+
+.headerNav .buttonsNav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.headerNav nav li a {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.headerNav nav li a:hover {
+  background-color: #d5011d;
+  transition: 0.2s;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: calc(100vh -132px);
+  padding: 0 30px 30px;
+}
+
+
+.container .titleImage {
+    max-width: 500px;
+}
+
+.container .description {
+  color: #a8adb7;
+  width: 85%;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.container .buttonTrailer {
+  background-color: #ff0021;
+  color: #ffffff;
+  padding: 15px;
+  padding-inline: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.2 all ease-in-out;
+}
+
+.container .buttonTrailer:hover {
+  transform: scale(1.02);
+}
+
+.backgroundVideo {
+  background-color: red;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.backgroundVideo .video {
+  height: 100vh;
+}
+
+.backgroundVideo::after {
+  content: "";
+  background-color: #d5011d;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 52, 50, 0.749);
+  visibility: hidden;
+}
+
+.contentModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  border-radius: 20px;
+  gap: 15px;
+}
+
+.closeModal {
+  background-color: #d5011d;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.modal iframe {
+  border-width: 0;
+  height: 360px;
+  width: 640px;
+}
+
+.modal.open {
+  opacity: 1;
+  visibility: visible;
+}

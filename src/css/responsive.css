@@ -34,7 +34,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .headerNav {
         flex-wrap: wrap;
         justify-content: center;
@@ -58,7 +58,27 @@
 
 @media (max-width: 376px) {
     .modal #video {
-        width: 250px;
-        height: 140px;
+        width: 75%;
+        height: auto;
+    }
+
+    .headerNav .logo {
+        display: none;
+    }
+
+    .headerNav .buttonsNav {
+        gap: 50x;
+      }
+
+    .headerNav nav li a:hover {
+        background-color: transparent;
+      }
+
+    .container .description {
+        font-size: 16px;
+    }
+
+    .container .buttonTrailer {
+        font-size: 16px;
     }
 }
